@@ -334,3 +334,31 @@ for(arit=0;arit<4;arit++){
     sumatoria+=conta/4;
 }
 alert('La Media aritmetica es: '+sumatoria)
+
+
+
+// -------------------------
+
+
+let numT = parseInt(prompt('Ingrese un numero entero'));
+var i = 0;
+let visible='';
+while(i<=numT){
+    visible += i + ',';
+    i++
+}
+console.log(visible)
+
+
+// problema mal resuelto, de la misma plataforma
+// let numP,Sum = 0;
+
+// while(Sum%2==0){
+//     numP = parseInt(prompt('Ingrese un numero entero'));
+//     while(numP != 0){
+//         Sum += numP;
+//         numP = parseInt(prompt('Ingrese un numero entero'));
+//     }
+//     alert("la suma es " + Sum)
+// }
+// alert('Fin de la prueba')
