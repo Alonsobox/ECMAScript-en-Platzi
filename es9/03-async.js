@@ -4,7 +4,7 @@ async function* anotherGenerator(){
     yield await Promise.resolve(3);
 }
 
-const other = anotherGenerator();
+const other = anotherGengierator();
 other.next().then(response => console.log(response.value))
 other.next().then(response => console.log(response.value))
 other.next().then(response => console.log(response.value))
