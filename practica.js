@@ -90,8 +90,8 @@ console.log("¿Es par? " + par);
 let numero = parseInt(prompt("NUMERO"));
 let resto = numero%2;
 if (resto === 0){
-    alert(numero+" es par"); 
-} 
+    alert(numero+" es par");
+}
 else{ alert(numero+" es impar"); }
 
 
@@ -267,7 +267,7 @@ alert("Tabla del" + multiplicando + '\n'+smg);
 let usu= parseInt(prompt('Ingrese numero'));
 let division;
 for(let i=1;i<usu;i++){//numeros menores de usu
-    
+
     if(i%3==2){ // los numeros menores de i, dividirlos entre3 y que sean igual a 2
         console.log(i)
     }
@@ -318,7 +318,7 @@ let Suma=0;
 for(let i=0;i<=ente;i++){
     // for(let s=i;i<;i++){
     Suma += i;
-    
+
 }
 console.log('Los numeros enteros de 0 a '+ente+' Suman '+Suma)
 
@@ -361,4 +361,71 @@ console.log(visible)
 //     }
 //     alert("la suma es " + Sum)
 // }
-// alert('Fin de la prueba')
+// alert('Fin de la prueba')}
+
+
+
+// ----------------Funciones
+
+let Num1,Num2;
+
+function SumaFuncion (numero1,numero2){
+    Num1=this.numero1;
+    Num2=this.numero2;
+    return numero1 + numero2;
+}
+SumaFuncion(3,5)
+
+
+// -----------------
+
+
+function esPar(numb){
+    if(numb%2==0){
+        return 'Es Par';
+    }else if (numb%2!=0){
+        return 'Es Impar'
+    }
+}
+
+esPar(4)
+
+// ------------------
+// let RepLetra,RepNume;
+let Llamadanumero='';
+
+function RepetirLetra (repletra,repnume){
+    // RepLetra=this.repletra;
+    // repnume=this.repnume;
+    for(let i= 1;i<=repnume;i++ ){
+        Llamadanumero+=repletra
+    }
+    return Llamadanumero + '\n';
+}
+
+alert(RepetirLetra('a',5))/// o pudes crear como variable el parametro 'a',5(llamandolos con un prompt)
+
+// ---------------------
+
+let ReslFacto=1;
+
+function Factorial(numF){
+    for(let i=1;i<=numF;i++){
+        ReslFacto = ReslFacto * i;
+    }
+    return ReslFacto;
+}
+Factorial(3)
+
+// -------------
+
+let NumerosReverse=parseInt(prompt('Ingrese numero para invertirlo'));
+
+function RevertirCadenaNumeros(rever){
+    const convertirReverse =  rever.toString().split("").reverse().join("");;
+    return NumerosReverse(convertirReverse);
+}
+
+RevertirCadenaNumeros(NumerosReverse);
+
+
